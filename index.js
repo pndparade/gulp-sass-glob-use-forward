@@ -36,13 +36,14 @@ module.exports = function() {
                 isForward = true;
             }
 
-            var files = glob.sync(path.join(file.base, globPattern), {
+            var files = glob.sync(globPattern, {
                 cwd: file.base
             });
 
             files.forEach(function(filename){
                 // check if it is a sass file
-                if (path.extname(filename).toLowerCase() == '.scss') {
+                if (['.scss', '.sass'].includes(path.extname(filename).toLowerCase())) {
+                    const pathEnd = path.extname(filename).toLowerCase() === '.scss' ? ';' : '';
                     // we remove the parent file base path from the path we will output
                     filename = path.normalize(filename);
                     var base = path.join(path.normalize(file.base), '/');
@@ -53,7 +54,7 @@ module.exports = function() {
                     if (isAs) {
                         importPath = `${importPath} as ${asRule}`;
                     }
-                    imports.push(`${importPath};`);
+                    imports.push(`${importPath}${pathEnd}`);
                 }
             });
 
