@@ -1,6 +1,6 @@
 {
   "name": "gulp-sass-glob-pattern",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "import directories in your SCSS or SASS with @use and @forward",
   "main": "index.js",
   "scripts": {
