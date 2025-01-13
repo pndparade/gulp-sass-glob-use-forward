@@ -1,7 +1,7 @@
 {
   "name": "gulp-sass-glob-use-forward",
   "version": "0.1.3",
-  "description": "import directories in your SCSS with @use and @forward",
+  "description": "import directories in your SCSS or SASS with @use and @forward",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
