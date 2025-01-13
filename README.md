@@ -1,4 +1,4 @@
-gulp-sass-glob-use-forward
+gulp-sass-glob-pattern
 =====================
 
 gulp task to allow importing directories in your SCSS or SASS using @use and @forward.
