@@ -1,7 +1,7 @@
 gulp-sass-glob-use-forward
 =====================
 
-gulp task to allow importing directories in your SCSS using @use and @forward.
+gulp task to allow importing directories in your SCSS or SASS using @use and @forward.
 
 Similar to [gulp-sass-glob-import](https://github.com/bleuarg/gulp-sass-glob-import) but supports @use and @forward instead.
 
@@ -41,6 +41,8 @@ npm install --save-dev gulp-sass-glob-use-forward
 // ...
 
 ```
+
+Or you can use sass syntax.
 
 #### in your gulpfile
 
